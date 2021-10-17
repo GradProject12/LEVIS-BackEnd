@@ -28,7 +28,7 @@ class AnimalController extends Controller
         $request->validate([
             'name' => 'required',
             'sound' => 'required',
-            'voice' => 'required',
+            'spelled' => 'required',
         ]);
         return Animal::create($request->all());
     }
