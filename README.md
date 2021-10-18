@@ -1,24 +1,24 @@
-# LEVI(Child Assistant Robot) Backend
+# LEVI (Child Assistant Robot)
 
 ## Routes
 ### Animals
 
--   **GET:** [http://127.0.0.1:8000/animal/](http://127.0.0.1:8000/animal/)
--   **GET:** [http://127.0.0.1:8000/animal/{id}](http://127.0.0.1:8000/animal/{id})
--   **POST:** [http://127.0.0.1:8000/animal/](http://127.0.0.1:8000/animal/)
--   **PUT:** [http://127.0.0.1:8000/animal/{id}](http://127.0.0.1:8000/animal/{id})
--   **DELETE:** [http://127.0.0.1:8000/animal/{id}](http://127.0.0.1:8000/animal/{id})
+-   **GET:** [http://127.0.0.1:8000/api/animal/](http://127.0.0.1:8000/api/animal/)
+-   **GET:** [http://127.0.0.1:8000/api/animal/{id}](http://127.0.0.1:8000/api/animal/{id})
+-   **POST:** [http://127.0.0.1:8000/api/animal/](http://127.0.0.1:8000/api/animal/)
+-   **PUT:** [http://127.0.0.1:8000/api/animal/{id}](http://127.0.0.1:8000/api/animal/{id})
+-   **DELETE:** [http://127.0.0.1:8000/api/animal/{id}](http://127.0.0.1:8000/api/animal/{id})
 ### FaceExpressions
 
--   **GET:** [http://127.0.0.1:8000/status/](http://127.0.0.1:8000/status/)
--   **GET:** [http://127.0.0.1:8000/status/{id}](http://127.0.0.1:8000/status/{id})
--   **POST:** [http://127.0.0.1:8000/status/](http://127.0.0.1:8000/status/)
--   **PUT:** [http://127.0.0.1:8000/status/{id}](http://127.0.0.1:8000/status/{id})
--   **DELETE:** [http://127.0.0.1:8000/status/{id}](http://127.0.0.1:8000/status/{id})
+-   **GET:** [http://127.0.0.1:8000/api/status/](http://127.0.0.1:8000/api/status/)
+-   **GET:** [http://127.0.0.1:8000/api/status/{id}](http://127.0.0.1:8000/api/status/{id})
+-   **POST:** [http://127.0.0.1:8000/api/status/](http://127.0.0.1:8000/api/status/)
+-   **PUT:** [http://127.0.0.1:8000/api/status/{id}](http://127.0.0.1:8000/api/status/{id})
+-   **DELETE:** [http://127.0.0.1:8000/api/status/{id}](http://127.0.0.1:8000/api/status/{id})
 ### authentications
--   **POST:** [http://127.0.0.1:8000/register/](http://127.0.0.1:8000/register/)
--   **POST:** [http://127.0.0.1:8000/login/](http://127.0.0.1:8000/login/)
--   **POST:** [http://127.0.0.1:8000/logout/](http://127.0.0.1:8000/logout/)
+-   **POST:** [http://127.0.0.1:8000/api/register/](http://127.0.0.1:8000/api/register/)
+-   **POST:** [http://127.0.0.1:8000/api/login/](http://127.0.0.1:8000/api/login/)
+-   **POST:** [http://127.0.0.1:8000/api/logout/](http://127.0.0.1:8000/api/logout/)
 
 
 
