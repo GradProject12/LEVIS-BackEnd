@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Animal;
+use App\Models\Expression;
 use Illuminate\Http\Request;
 
-class AnimalController extends Controller
+class FaceExpressionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AnimalController extends Controller
      */
     public function index()
     {
-        return Animal::all();
+        return Expression::all();
     }
 
     /**
@@ -26,47 +26,45 @@ class AnimalController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'picture' => 'required',
+            'status' => 'required',
             'sound' => 'required',
-            'spelled' => 'required',
         ]);
-        return Animal::create($request->all());
+        return Expression::create($request->all());
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $status
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($status)
     {
-        return Animal::find($id);
+        return Expression::find($status);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  int  $status
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $status)
     {
-        $animal=Animal::find($id);
-        $animal->update($request->all());
-        return $animal;
+        $expression=Expression::find($status);
+        $expression->update($request->all());
+        return $expression;
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int  $status
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($status)
     {
-        return Animal::destroy($id);
+        return Expression::destroy($status);
     }
 }
