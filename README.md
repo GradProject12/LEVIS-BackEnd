@@ -1,3 +1,23 @@
+# LEVI(Child Assistant Robot) Backend
+
+## Routes
+### Animals
+
+-   **GET:** [http://127.0.0.1:8000/animal/](http://127.0.0.1:8000/animal/)
+-   **GET:** [http://127.0.0.1:8000/animal/{id}](http://127.0.0.1:8000/animal/{id})
+-   **POST:** [http://127.0.0.1:8000/animal/](http://127.0.0.1:8000/animal/)
+-   **PUT:** [http://127.0.0.1:8000/animal/{id}](http://127.0.0.1:8000/animal/{id})
+-   **DELETE:** [http://127.0.0.1:8000/animal/{id}](http://127.0.0.1:8000/animal/{id})
+### FaceExpressions
+
+-   **GET:** [http://127.0.0.1:8000/status/](http://127.0.0.1:8000/status/)
+-   **GET:** [http://127.0.0.1:8000/status/{id}](http://127.0.0.1:8000/status/{id})
+-   **POST:** [http://127.0.0.1:8000/status/](http://127.0.0.1:8000/status/)
+-   **PUT:** [http://127.0.0.1:8000/status/{id}](http://127.0.0.1:8000/status/{id})
+-   **DELETE:** [http://127.0.0.1:8000/status/{id}](http://127.0.0.1:8000/status/{id})
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
