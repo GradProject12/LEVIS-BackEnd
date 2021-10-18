@@ -15,6 +15,10 @@
 -   **POST:** [http://127.0.0.1:8000/status/](http://127.0.0.1:8000/status/)
 -   **PUT:** [http://127.0.0.1:8000/status/{id}](http://127.0.0.1:8000/status/{id})
 -   **DELETE:** [http://127.0.0.1:8000/status/{id}](http://127.0.0.1:8000/status/{id})
+### authentications
+-   **POST:** [http://127.0.0.1:8000/register/](http://127.0.0.1:8000/register/)
+-   **POST:** [http://127.0.0.1:8000/login/](http://127.0.0.1:8000/login/)
+-   **POST:** [http://127.0.0.1:8000/logout/](http://127.0.0.1:8000/logout/)
 
 
 
