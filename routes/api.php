@@ -29,16 +29,16 @@ Route::get('/status',[FaceExpressionController::class,'index']);
 Route::get('/status/{status}',[FaceExpressionController::class,'show']);
 Route::post('/register',[AuthController::class,'register']);
 Route::post('/login',[AuthController::class,'login']);
+Route::post('/animal',[AnimalController::class,'store']);
+Route::put('/animal/{id}',[AnimalController::class,'update']);
+Route::delete('/animal/{id}',[AnimalController::class,'destroy']);
+Route::post('/status',[FaceExpressionController::class,'store']);
+Route::put('/status/{status}',[FaceExpressionController::class,'update']);
+Route::delete('/status/{status}',[FaceExpressionController::class,'destroy']);
 
 
 //Protected routes
 Route::group(['middleware'=>['auth:sanctum']],function(){
-    Route::post('/animal',[AnimalController::class,'store']);
-    Route::put('/animal/{id}',[AnimalController::class,'update']);
-    Route::delete('/animal/{id}',[AnimalController::class,'destroy']);
-    Route::post('/status',[FaceExpressionController::class,'store']);
-    Route::put('/status/{status}',[FaceExpressionController::class,'update']);
-    Route::delete('/status/{status}',[FaceExpressionController::class,'destroy']);
     Route::post('/logout',[AuthController::class,'logout']);
-    
+
 });
